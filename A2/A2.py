@@ -30,7 +30,6 @@ def A2_SVC(x_train, y_train, x_test, y_test):
     y_pred = model.predict(x_test)
     test_acc = accuracy_score(y_test, y_pred)
 
-    plot_confusion_matrix('auto', y_pred, y_test)
     print("Test Accuracy: ", test_acc)
     return model, train_acc, test_acc
 
@@ -55,8 +54,6 @@ def A2_GridSVC(x_train, y_train, x_test, y_test):
 
     train_acc = model.score(x_train, y_train)
     test_acc = accuracy_score(y_test, y_pred)
-
-    plot_confusion_matrix('auto', y_pred, y_test)
 
     print("Accuracy:", train_acc, test_acc)
     return model, train_acc, test_acc
