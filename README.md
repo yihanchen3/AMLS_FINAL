@@ -57,19 +57,19 @@ The `requirement.txt` file that refers to the environment of the  project is als
 
 ## Role of each file
 
-**main.py** is where to run the four tasks. This file calls models from their definition files  and run them separately under the control of argparse.
+ - **main.py** is where to run the four tasks. This file calls models from their definition files  and run them separately under the control of argparse.
 is the starting point of the entire project. It defines the order in which instructions are realised. More precisely, it is responsible to call functions from other files in order to divide the datasets provided, pre-process images and instantiate, train and test models.
 
-**A1.py** defines the multilayer perceptron structure and its parameters allocation method.This file also provides function `A1` to train, test, and predict on the dataset. Results analysis part is included in the evaluate part.
+ - **A1.py** defines the multilayer perceptron structure and its parameters allocation method.This file also provides function `A1` to train, test, and predict on the dataset. Results analysis part is included in the evaluate part.
 
-**A2.py** defines the support vector classification structure and the GridSearchCV method to optimize hyperparameters.This file also provides function `A2` to train, test, and predict on the dataset. 
+ - **A2.py** defines the support vector classification structure and the GridSearchCV method to optimize hyperparameters.This file also provides function `A2` to train, test, and predict on the dataset. 
 
-**B1.py** defines the CNN structure and the parameters set for each layer. This file also provides function `B1` to train, test, and predict on the dataset. Results analysis part is included in the evaluate part.
+ - **B1.py** defines the CNN structure and the parameters set for each layer. This file also provides function `B1` to train, test, and predict on the dataset. Results analysis part is included in the evaluate part.
 
-**B2.py** defines the CNN structure and the parameters set for each layer. This file also provides function `B2` to train, test, and predict on the dataset. Results analysis part is included in the evaluate part.
+ - **B2.py** defines the CNN structure and the parameters set for each layer. This file also provides function `B2` to train, test, and predict on the dataset. Results analysis part is included in the evaluate part.
 
-**pre_processing.py** provides functions to the data preparation. `extract_features_labels` pre-processes the original data with a face detector to offer input data for Task A; `ImgDataGenerator_process` pre-processes the original data with the imagedatagenerator method to offer input data for Task B. 
+ - **pre_processing.py** provides functions to the data preparation. `extract_features_labels` pre-processes the original data with a face detector to offer input data for Task A; `ImgDataGenerator_process` pre-processes the original data with the imagedatagenerator method to offer input data for Task B. 
 
-**result_process.py** includes functions to visualize the training process and results of the model.
+ - **result_process.py** includes functions to visualize the training process and results of the model.
 
-**shape_predictor_68_face_landmarks.dat** serves as the pre-trained model for the dlib 68 face detector function.
+ - **shape_predictor_68_face_landmarks.dat** serves as the pre-trained model for the dlib 68 face detector function.
