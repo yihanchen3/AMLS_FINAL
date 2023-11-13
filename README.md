@@ -1,9 +1,27 @@
-# AMLS_FINAL
-In this project, two classification tasks listed below are addressed under the supervised machine learning methods and reached good performance. 
+# Facial Attribute Recognition Project
+In this project, two image classification tasks listed below are addressed under the supervised machine learning methods and reached good performance. 
 
 1.Binary tasks of Gender &amp; Emotion Detection (celeba dataset) 
 
 2.Multiclass tasks of Face shape &amp; Eye color recognition (cartoon_set dataset)
+
+## Task description
+
+### Datasets:
+- Provided two tailored datasets for the assignment, derived from:
+  1. **CelebFaces Attributes Dataset (CelebA):** A set of 5000 celebrity images.
+  2. **Cartoon Set:** Comprising 10000 images of random cartoons/avatars.
+- Download the datasets [here](https://bit.ly/dataset_AMLS_22-23) and the test set [here](https://bit.ly/dataset_AMLS_22-23_test).
+
+### Tasks:
+#### A. Binary Tasks (celeba dataset):
+  - **A1: Gender Detection:** Distinguish between male and female.
+  - **A2: Emotion Detection:** Identify whether the subject is smiling or not.
+
+#### B. Multiclass Tasks (cartoon_set dataset):
+  - **B1: Face Shape Recognition:** Classify into 5 types of face shapes.
+  - **B2: Eye Color Recognition:** Categorize into 5 types of eye colors.
+
 
 
 ## How to run the project
